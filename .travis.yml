@@ -6,4 +6,4 @@ before_install:
     - docker build -f Dockerfile.dev . -t natdanaimungkung/docker-react
 
 script:
-    - docker run natdanaimungkung/docker-react npm run test -- --coverage
+    - docker run natdanaimungkung/docker-react npm run test -- --coverage --watchAll=false
